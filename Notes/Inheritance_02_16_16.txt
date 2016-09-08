@@ -1,0 +1,28 @@
+Inheritance: piggyback off of code by extending child classes from a parent class
+How we do it now:
+Student Professor and Staff all have personal, private variables and personal classes.
+In tester have arrays of Student, Professor, and Staff
+
+How to organize better:
+1. Look at what is in each class that is repetitive information
+
+Create a class and call it UniversityAffiliate that has repeat information(variables)
+Say, student inherits or extends UniversityAffiliate. It will inherit all the variables
+from UA and then you can add on more pertinent variables.
+You can do the same for Professor and Staff.
+Use if/else statements to ask if an instance of Student/Prof etc... while iterating through <UA>
+
+Can't use multiple inheritance like C++(what is mult inher? sounds interesting)
+Interfaces-only has methods but no code or curly brackets. ;movingObj
+	public void move
+
+	?
+
+
+Advantages:
+Less typing, less repetition
+Ease of additional classes like Graduate, Donor
+Only need a <UniversityAffiliate> array
+Ease of new methods, variables without rewriting code
+@Override can override an old method with your new one unless
+	you call super.oldMethod() (calls the original method from the parent)
